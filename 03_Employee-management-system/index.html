@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Management System</title>
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>Employee Database Management</h1>
+
+            <button class="create-employee">Add Employee</button>
+        </header>
+
+        <div class="employes">
+            <div class="employes__name">
+                <span class="employes__name--title">Employee List</span>
+
+                <div class="employes__name--list"></div>
+            </div>
+
+            <div class="employee__single">
+                <div class="employee__single--title">
+                    Employee Information
+                </div>
+                <div class="employee__single--info"></div>
+            </div>
+        </div>
+        <!-- Add employee form will go here -->
+         <div class="addEmployee">
+            <form class="addEmployee-crate">
+                Add a new employee:
+                <div>
+                    <input type="text" name="firstName" placeholder="Enter your first name" required />
+
+                    <input type="text" name="lastName" placeholder="Enter your last name" required />
+                </div>
+
+                <input type="text" name="imageUrl" placeholder="Image url (optional)">
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <input type="number" name="contactNumber" placeholder="Enter your phone number" required />
+                <input type="number" name="salary" placeholder="Enter your salary" required />
+                <input type="text" name="address" placeholder="Enter your address" required />
+                <input type="date" name="dob" class="employee_create--dob" placeholder="Enter your date of birth" required />
+                <input type="submit" class="employee_create--submit" value="submit" />
+            </form>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
